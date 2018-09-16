@@ -2,7 +2,7 @@ const CurrentDate = (props) => {
   return (
     <div>
       { /* change code below this line */ }
-      <p>The current date is: {props.date=Date()}</p>
+      <p>The current date is: {props.date}</p>
       { /* change code above this line */ }
     </div>
   );
@@ -17,7 +17,7 @@ class Calendar extends React.Component {
       <div>
         <h3>What date is it?</h3>
         { /* change code below this line */ }
-        <CurrentDate  />
+        <CurrentDate date={Date()}  />
         { /* change code above this line */ }
       </div>
     );
