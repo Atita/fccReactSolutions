@@ -6,7 +6,7 @@ class MyApp extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this);
   }
-  handleChange(event) {
+  handleChange(event) {  //the callback
     this.setState({
       inputValue: event.target.value
     });
@@ -15,8 +15,10 @@ class MyApp extends React.Component {
     return (
        <div>
         { /* change code below this line */ }
-       <RenderInput input={this.state.inputValue}/>
+       
       <GetInput input={this.state.inputValue} handleChange={this.handleChange}/>
+      <RenderInput input={this.state.inputValue}/>
+        {/*triggers re-rendering because of state change*/}
         { /* change code above this line */ }
        </div>
     );
