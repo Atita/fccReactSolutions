@@ -3,7 +3,7 @@ class StatefulComponent extends React.Component {
     super(props);
     // initialize state here
     this.state = {
-      name:'anatoly'
+      name: String('anatoly') // used string global object, this ensures string type no-proptypes anymore.
      }
   }
   render() {
