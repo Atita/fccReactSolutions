@@ -3,11 +3,11 @@ class MyComponent extends React.Component {
     super(props);
   }
   componentWillMount() {
-    // change code below this line
-   console.log('This is from componentWillMount()')
-    // change code above this line
+      console.log("My Component is mounting");
   }
   render() {
-    return <div />
+    return <div> Mounted Now
+    {console.log('Mounted')}
+     </div>
   }
 };
