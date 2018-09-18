@@ -15,7 +15,7 @@ class GateKeeper extends React.Component {
     };
     // change code below this line
     if (this.state.input.length>15) {
-       inputStyle = { border: '3px solid red' };
+       inputStyle.border= '3px solid red';  //refactored to dot notation.
     }
     // change code above this line
     return (
