@@ -31,7 +31,7 @@ class MyComponent extends React.Component {
     }
   }
   render() {
-    const usersOnline = this.state.users.filter(user=> user.online===true); 
+    const usersOnline = this.state.users.filter(user=> user.online); 
     const renderOnline = usersOnline.map((x,index)=><li key={index}>{x.username}</li>);
     return (
        <div>
