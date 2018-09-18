@@ -7,8 +7,8 @@ class Dialog extends React.Component {
   }
   // change code below this line
   componentWillReceiveProps(nextProps) {
-    console.log(this.props);
-    console.log(nextProps); // remove "this" it is unnecessary here
+    console.log(JSON.stringify(this.props));
+    console.log(JSON.stringify(nextProps)); // remove "this" it is unnecessary here
   } 
   componentDidUpdate() {
     console.log("Component has been updated.");
